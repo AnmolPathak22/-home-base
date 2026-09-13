@@ -73,3 +73,92 @@
 .song audio {
   width: 100%;
 }
+
+body {
+  background: linear-gradient(160deg, #fff0f5, #fdf6f0);
+  font-family: 'Caveat', cursive;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 56px;
+  text-align: center;
+  color: #d16b96;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a94b78;
+  background: #ffe3ef;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #ffc2dd;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background: #ffc2dd;
+  transform: scale(1.08);
+  color: #fff;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before, body::after {
+  content: "✦";
+  position: fixed;
+  font-size: 40px;
+  color: #ffc2dd;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+body::before {
+  top: 60px;
+  left: 40px;
+}
+
+body::after {
+  bottom: 80px;
+  right: 60px;
+}
+
+.bubble-label {
+  font-family: 'Fredoka', sans-serif;
+  display: inline-block;
+  background: #ffe3ef;
+  color: #a94b78;
+  padding: 8px 24px;
+  border-radius: 40px;
+  border: 2px dashed #ffc2dd;
+  font-size: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 52px;
+  text-align: center;
+  color: #d16b96;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
