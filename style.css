@@ -21,38 +21,55 @@
 }
 .music-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 40px;
-  max-width: 500px;
 }
 
 .song {
-  background: linear-gradient(135deg, #fff5f5, #fff);
-  border-radius: 16px;
-  padding: 20px 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  border: 1px solid #f0e0e0;
+  width: 260px;
+  background: linear-gradient(160deg, #3a3a3a, #1c1c1c);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+.song:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.song:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.song:hover {
+  transform: rotate(0deg) scale(1.04);
+  transition: 0.2s ease;
+}
+
+.reels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-bottom: 16px;
+}
+
+.reel {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #111 0 8px, #999 9px 11px, #555 12px 25px);
+  border: 2px solid #777;
 }
 
 .song .caption {
   font-family: 'Caveat', cursive;
-  font-size: 24px;
-  margin: 0 0 12px 0;
-  text-align: left;
-  color: #333;
-}
-
-.song .caption::before {
-  content: "🎵 ";
+  font-size: 22px;
+  text-align: center;
+  color: #8A5A3A;
+  margin: 8px 0 14px 0;
 }
 
 .song audio {
   width: 100%;
-  accent-color: #d17a7a;
-}
-
-.song:hover {
-  transform: scale(1.02);
-  transition: 0.2s ease;
 }
