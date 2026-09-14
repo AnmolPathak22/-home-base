@@ -1,10 +1,11 @@
-// Reset flip state and trigger entrance animation on every page load
 window.addEventListener('pageshow', function () {
   const leaf = document.getElementById('leaf');
   if (!leaf) return;
   leaf.classList.remove('flipping');
   requestAnimationFrame(() => {
-    leaf.classList.remove('incoming');
+    requestAnimationFrame(() => {
+      leaf.classList.remove('incoming');
+    });
   });
 });
 
