@@ -232,3 +232,45 @@ nav a:hover {
 .leaf.flipping {
   transform: rotateY(-170deg);
 }
+
+.book {
+  position: relative;
+}
+
+.side-tabs {
+  position: absolute;
+  top: 50px;
+  right: -54px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 10;
+}
+
+.side-tabs a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration: none;
+  color: #fdf8ee;
+  padding: 16px 8px;
+  border-radius: 0 8px 8px 0;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.35);
+  transition: 0.2s ease;
+}
+
+.side-tabs a:hover {
+  padding-right: 14px;
+}
+
+.side-tabs a:nth-child(1) { background: #6b8fa8; }
+.side-tabs a:nth-child(2) { background: #a87f8f; }
+.side-tabs a:nth-child(3) { background: #8fa87f; }
+.side-tabs a:nth-child(4) { background: #c9a76b; }
+.side-tabs a:nth-child(5) { background: #a88f6b; }
+
+.leaf.incoming {
+  transform: rotateY(-170deg);
+}
